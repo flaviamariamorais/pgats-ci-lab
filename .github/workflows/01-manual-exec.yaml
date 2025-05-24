@@ -20,7 +20,7 @@ jobs:
     # passos do script de build
     steps:
       #  clone do projeto
-      - uses: actions/chechout@v4
+      - uses: actions/checkout@v4
 
       # instalação do node
       - uses: actions/setup-node@v4
