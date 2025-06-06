@@ -2,7 +2,7 @@
 
 # nome do nosso pipeline
 
-name: 'Execução Manual'
+name: 'Execução agendada'
 
 # regras de disparo (gatilhos/triggers)
 # gatilho de exec manual = workflow_dispatch
