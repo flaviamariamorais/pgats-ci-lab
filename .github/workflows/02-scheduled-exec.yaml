@@ -8,13 +8,12 @@ name: 'Execução agendada'
 # gatilho de exec manual = workflow_dispatch
 
 on:
-
   schedule:
     - cron: '0 6 * * 0'
 
 # trabalhos/tarefas dentro do pipeline = jobs
 jobs:
-  e2e-tests: 
+  e2e-tests:
     #maquina que o job vai executar
     runs-on: ubuntu-latest
 
@@ -36,16 +35,10 @@ jobs:
       - name: Instalando depedências
         run: yarn
 
-
       # instalação do Playwright
       - name: Instalando Playwright
         run: yarn playwright install
 
-
       # executar os testes e2e
       - name: Executando teste E2E
         run: yarn run e2e
-
-
-
-  
